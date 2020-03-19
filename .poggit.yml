@@ -4,9 +4,8 @@ branches:
 - master
 projects:
   NotesUI:
-    path: "icon.png"
+    path: ""
     libs:
     - src: jojoe77777/FormAPI/libFormAPI
       version: ^1.3  
-      
 ...
