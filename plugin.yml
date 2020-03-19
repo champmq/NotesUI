@@ -1,0 +1,10 @@
+name: NotesUI
+main: ChampOfGames\NotesUI\Main
+author: ChampOfGames
+version: 1.0.0
+api: 3.0.0
+commands:
+  notesui:
+    description: Create Notes with an UI
+    usage: /notesui 
+    permission: notes.use
