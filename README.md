@@ -15,5 +15,5 @@ Just open an [issue](https://github.com/ChampOfGames/NotesUI/issues) or contact 
 
 ## Picture
 
-![NotesUI](https://github.com/ChampOfGames/GroupsUI/blob/master/icon.png "NotesUI")
+![NotesUI](https://github.com/ChampOfGames/NotesUI/blob/master/icon.png "NotesUI")
 
