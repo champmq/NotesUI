@@ -1,7 +1,7 @@
 # NotesUI
 
-Create notes for youself with the command /notesui <br>
-Permission: notes.use
+Create notes with the command /notesui so you don't have to remember everything you planned. <br>
+Permission: notesui.use
 
 ## What you can do:
 
