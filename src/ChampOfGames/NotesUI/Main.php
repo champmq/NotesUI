@@ -99,7 +99,7 @@ class Main extends PluginBase implements Listener
     {
         if ($cmd->getName() === "notesui") {
             if ($sender instanceof Player) {
-                if ($sender->hasPermission("notes.use")) {
+                if ($sender->hasPermission("notesui.use")) {
                     $this->openNoteUI($sender);
                 }
             }
