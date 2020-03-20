@@ -7,4 +7,4 @@ commands:
   notesui:
     description: Create Notes with an UI
     usage: /notesui 
-    permission: notes.use
+    permission: notesui.use
