@@ -90,7 +90,7 @@ class Main extends PluginBase implements Listener
 
 
         $form->setTitle("NotesUI");
-        $form->addDropdown("Deine Notizen:", $fname);
+        $form->addDropdown("Your notes:", $fname);
         $form->sendToPlayer($player);
         return $form;
     }
