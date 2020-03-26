@@ -10,7 +10,7 @@ Permission: notesui.use
 
 ## Want to report something or you have an idea?
 
-Just open an [issue](https://github.com/ChampOfGames/NotesUI/issues) or contact me on discord ChmampOfGames#0001.
+Just open an [issue](https://github.com/ChampOfGames/NotesUI/issues) or contact me on discord ChampOfGames#8712.
 
 
 ## Picture
