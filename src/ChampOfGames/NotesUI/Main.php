@@ -48,8 +48,8 @@ class Main extends PluginBase implements Listener
 
             if (isset($data[0])) {
 
-                if (!file_exists($this->getDataFolder() .  $player->getName()] . "/")) {
-                    @mkdir($this->getDataFolder() .  $player->getName()] . "/");
+                if (!file_exists($this->getDataFolder() .  $player->getName() . "/")) {
+                    @mkdir($this->getDataFolder() .  $player->getName() . "/");
                 }
                 $note = fopen($this->getDataFolder() . $player->getName() . "/" . $data[0] . ".txt", "w");
                 fwrite($note, $data[1]);
