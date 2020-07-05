@@ -16,7 +16,7 @@ use pocketmine\utils\Config;
 class Main extends PluginBase implements Listener
 {
     public  $files = array();
-    public $fnames;
+    public $fnames = array();
     public function openNoteUI($player)
     {
         $form = new SimpleForm(function (Player $player, int $data = null) {
@@ -41,7 +41,7 @@ class Main extends PluginBase implements Listener
         $form->setTitle("NotesUI");
         $form->setContent("Choose what you want to do.");
         $form->addButton("§2Create a note");
-        $form->addButton("$4Delete a note");
+        $form->addButton("§4Delete a note");
         $form->addButton("§bYour notes");
         $form->addButton("Close");
         $form->sendToPlayer($player);
@@ -120,11 +120,8 @@ class Main extends PluginBase implements Listener
     public function delNotesUI($player)
     {
 
-        $fname = array();
         foreach (glob($this->getDataFolder() . $player->getName() . "/*.txt") as $file) {
-            $this->files[] = $file;
-            $name = basename($file, ".txt") . PHP_EOL;
-            $this->fnames[] = $name;
+            $this->fnames[] = $file;
         }
         $form = new CustomForm(function (Player $player, array $data = null) {
 
