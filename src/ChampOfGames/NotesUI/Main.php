@@ -128,7 +128,7 @@ class Main extends PluginBase implements Listener
         }
         $form = new CustomForm(function (Player $player, array $data = null) {
 
-$this->delNote($player->getName() ,$this->files2[$data[0]]. ".txt");
+$this->delNote($player->getName() ,$this->files2[$data[0]]);
 
 
         });
