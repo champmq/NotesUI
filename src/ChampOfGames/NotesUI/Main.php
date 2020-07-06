@@ -113,8 +113,8 @@ class Main extends PluginBase implements Listener
         return true;
     }
 
-    public function delNote($player, $note){
-        unlink($player . "/" . $note);
+    public function delNote($note){
+        unlink($note);
     }
 
 
@@ -122,12 +122,12 @@ class Main extends PluginBase implements Listener
     {
 
         foreach (glob($this->getDataFolder() . $player->getName() . "/*.txt") as $file) {
-            $this->files2[] = str_replace($player->getName(), "", $file);
+            $this->files2[] = $file;
             $name = basename($file, ".txt") . PHP_EOL;
             $this->fnames[] = $name;
         }
         $form = new CustomForm(function (Player $player, array $data = null) {
-$this->delNote($player->getName() , $this->files2[$data[0]]);
+$this->delNote($this->files2[$data[0]]);
 
 
         });
