@@ -114,7 +114,7 @@ class Main extends PluginBase implements Listener
     }
 
     public function delNote($player, $note){
-        unlink($this->getDataFolder() . $player . "/" . $note);
+        unlink($player . "/" . $note);
     }
 
 
