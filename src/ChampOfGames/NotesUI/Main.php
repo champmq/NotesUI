@@ -122,13 +122,12 @@ class Main extends PluginBase implements Listener
     {
 
         foreach (glob($this->getDataFolder() . $player->getName() . "/*.txt") as $file) {
-            $this->files2[] = $file;
+            $this->files2[] = str_replace($player->getName(), "", $file);
             $name = basename($file, ".txt") . PHP_EOL;
             $this->fnames[] = $name;
         }
         $form = new CustomForm(function (Player $player, array $data = null) {
-
-$this->delNote($player->getName() ,$this->files2[$data[0]]);
+$this->delNote($player->getName() , $this->files2[$data[0]]);
 
 
         });
